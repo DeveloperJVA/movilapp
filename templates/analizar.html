@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Análisis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+
+<div class="result-box">
+    <h2>RESULTADO OBTENIDO</h2>
+    {% if mensaje_resultado %}
+        <div style="margin-bottom: 20px;">
+            {% for linea in mensaje_resultado.split('\n') %}
+                {{ linea|safe }}<br>
+            {% endfor %}
+        </div>
+    {% endif %}
+    <a href="{{ url_for('index') }}"><button type="button">Regresar al Inicio</button></a>
+    <a href="https://desaparecidosenperu.policia.gob.pe/Desaparecidos/como_denunciar" target="_blank"><button type="button">Contactar</button></a>
+</div>
+    <footer class="translucent-footer">
+        <p>© 2023 Reconocimiento Facial "TeBusco". Desarrollado por AJ</p>
+    </footer>
+
+</body>
+</html>

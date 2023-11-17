@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Imagen y Datos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="registration-container">
+        <div class="registration-box">
+            <h1>Registrar Imagen y Datos</h1>
+
+            <form class="registration-form" action="/registrar" method="post" enctype="multipart/form-data">
+                <div class="file-container">
+                    <label for="archivo">Selecciona una imagen o video:</label>
+                    <input class="file-input" type="file" name="archivo" accept="image/*, video/*" required>
+                </div>
+                <br>
+
+                <label for="nombre">Nombre:</label>
+                <input class="text-input" type="text" name="nombre" required>
+                <br>
+
+                <label for="apellido">Apellido:</label>
+                <input class="text-input" type="text" name="apellido" required>
+                <br>
+
+                <label for="fecha_desaparicion">Fecha de Desaparición:</label>
+                <input class="text-input" type="date" name="fecha_desaparicion" required>
+                <br>
+
+                <label for="estado">Estado:</label>
+                <input class="text-input" type="text" name="estado" required>
+                <br>
+
+                <label for="telefono_contacto">Teléfono de Contacto:</label>
+                <input class="text-input" type="tel" name="telefono_contacto" required>
+                <br>
+
+                <button class="registration-button" type="submit">Guardar Datos</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="translucent-footer">
+        <p>© 2023 Reconocimiento Facial App. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Agrega aquí tus enlaces a scripts JavaScript si es necesario -->
+</body>
+</html>

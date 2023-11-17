@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Busco RF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+</head>
+<body>
+    <div class="container">
+        <div class="white-box">
+            <h1>Aplicación de Reconocimiento Facial</h1>
+
+            <form action="/analizar" method="post" enctype="multipart/form-data">
+                <label for="archivo">Selecciona una imagen o video:</label>
+                <input type="file" name="archivo" accept="image/*, video/*" required>
+                <br>
+                <button class="blue-button" type="submit">Analizar</button>
+                <button class="green-button" type="button" onclick="window.location.href='{{ url_for('visualizar_registros') }}'">Ver Registros</button>
+            </form>
+
+            <!--<form action="/registrar" method="get">
+                <button type="submit">Registrar</button>
+            </form> -->
+        </div>
+    </div>
+    <footer class="translucent-footer">
+        <p>© 2023 Reconocimiento Facial "TeBusco". Desarrollado por AJ</p>
+    </footer>
+
+    <!-- Puedes agregar aquí elementos adicionales o resultados de reconocimiento facial -->
+
+    <!-- Agrega aquí tus enlaces a scripts JavaScript si es necesario -->
+</body>
+</html>

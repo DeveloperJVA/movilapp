@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Registros</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+
+<div class="containervis">
+    <div class="white-box">
+        <h1>Visualización de Registros</h1>
+        {% for registro in registros %}
+            <div class="registro">
+                <h2>{{ registro['nombre'] }} {{ registro['apellido'] }}</h2>
+                <p>Fecha de Desaparición: {{ registro['fecha_desaparicion'] }}</p>
+                <p>Estado: {{ registro['estado'] }}</p>
+
+                <img class="imagen-registrada" src='{{ url_for('display_image', filename=registro['ruta_imagen']) }}' alt='Imagen Registrada'>
+
+            </div>
+        {% endfor %}
+    </div>
+    <a href="{{ url_for('index') }}"><button type="button">Regresar al Inicio</button></a>
+</div>
+
+</body>
+</html>

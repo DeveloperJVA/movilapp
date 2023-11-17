@@ -1,0 +1,201 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.white-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+}
+
+h2 {
+    color: #333333;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.blue-button {
+    background-color: #3498db;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+}
+
+/* Estilo adicional para el botón de submit */
+
+.blue-button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blue-button:hover {
+    background-color: #2980b9;
+}
+/* Agrega estas reglas para alinear los botones en fila horizontal */
+.translucent-footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    color: #333; /* Color del texto */
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.registration-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.registration-form {
+    width: 100%;
+}
+
+.file-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.file-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+}
+.text-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.registration-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.registration-button:hover {
+    background-color: #2980b9;
+}
+
+.result-container {
+    max-width: 400px;
+    width: 100%;
+}
+
+.result-box {
+    background-color: #fff;
+    border: 20px solid #de1919;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.result-box p {
+    font-size: 60px;
+}
+
+.result-box img {
+    width: 300px;
+    height: 400px;
+    border-radius: 6px
+}
+
+.imagen-registrada{
+    width: 300px;
+    height: 400px;
+    border-radius: 6px
+}
+
+.registro {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.containervis{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
